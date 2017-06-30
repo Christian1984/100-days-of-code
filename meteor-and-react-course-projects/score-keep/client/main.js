@@ -7,6 +7,16 @@ import {Tracker} from 'meteor/tracker';
 
 import {Players} from './../imports/api/players';
 
+class TitleBar extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>My App Name</h1>
+      </div>
+    );
+  }
+}
+
 //modification functions
 let addPlayer = (playerName) => {
   Players.insert({name: playerName, score: 0});
@@ -78,7 +88,7 @@ Meteor.startup(() => {
 
       let jsx = (
         <div>
-          <h1>{title}</h1>
+          <TitleBar/>
           {renderPlayers(players)}
           <form onSubmit={handleSubmit}>
             <input type='text' name='playerName' placeholder='Player Name' />

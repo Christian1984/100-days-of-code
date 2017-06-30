@@ -8,6 +8,10 @@ class Person {
     return `Hi, I am ${this.name} and I am ${this.age} years old.`;
   }
 
+  callGetGreeting() {
+    this.getGreeting();
+  }
+
   getAge = function() {
     return this.age;
   }
@@ -48,6 +52,7 @@ export default function() {
   let him = new Person('Benni', 2);
   console.log(him);
   console.log(him.getGreeting());
+  //console.log(him.callGetGreeting());
 
   let me = new Employee('Chris', 33, 'Entrepreneur');
   console.log(me);

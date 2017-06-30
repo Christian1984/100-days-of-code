@@ -6,21 +6,10 @@ import {Meteor} from 'meteor/meteor';
 import {Tracker} from 'meteor/tracker';
 
 import {Players} from './../imports/api/players';
-
-class TitleBar extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>My App Name</h1>
-      </div>
-    );
-  }
-}
+import TitleBar from './../imports/ui/TitleBar';
+import AddPlayer from './../imports/ui/AddPlayer';
 
 //modification functions
-let addPlayer = (playerName) => {
-  Players.insert({name: playerName, score: 0});
-};
 
 let removePlayer = (playerId) => {
   Players.remove({_id: playerId});
@@ -30,21 +19,6 @@ let addScore = (playerId, score=1) => {
   player = Players.findOne({_id: playerId});
   Players.update({_id: playerId}, {name: player.name, score: player.score + score});
 }
-
-//handlers
-let handleSubmit = (e) => {
-  e.preventDefault();
-
-  let playerName = e.target.playerName.value;
-
-  if (playerName != '') {
-    e.target.playerName.value = '';
-    addPlayer(playerName);
-  }
-  else {
-    console.log('Name cannot be empty');
-  }
-};
 
 let handleRemove = (e) => {
   e.preventDefault();
@@ -78,6 +52,7 @@ function renderPlayers(players) {
 //startup
 Meteor.startup(() => {
   let title = 'Score Keep App';
+  let subtitle = 'Keep Track of Your Scores';
 
   Tracker.autorun(() => {
       let players = Players.find({}, {sort: {score: -1}}).fetch();
@@ -88,12 +63,9 @@ Meteor.startup(() => {
 
       let jsx = (
         <div>
-          <TitleBar/>
+          <TitleBar title={title} subtitle={subtitle}/>
           {renderPlayers(players)}
-          <form onSubmit={handleSubmit}>
-            <input type='text' name='playerName' placeholder='Player Name' />
-            <button>Add Player</button>
-          </form>
+          <AddPlayer/>
         </div>
       );
 

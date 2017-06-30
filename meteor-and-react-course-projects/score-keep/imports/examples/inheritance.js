@@ -33,13 +33,27 @@ class Employee extends Person {
   }
 }
 
+class Programmer extends Person {
+  constructor (name = 'noname', age = 0, preferredLanguage = 'assembler') {
+    super(name, age);
+    this.preferredLanguage = preferredLanguage;
+  }
+
+  getGreeting() {
+    return `${super.getGreeting()} My favourite language is ${this.preferredLanguage}.`;
+  }
+}
+
 export default function() {
-  let me = new Person('Benni', 2);
+  let him = new Person('Benni', 2);
+  console.log(him);
+  console.log(him.getGreeting());
+
+  let me = new Employee('Chris', 33, 'Entrepreneur');
   console.log(me);
+  console.log(me.hasJob());
   console.log(me.getGreeting());
 
-  let her = new Employee('Chris', 33, 'Entrepreneur');
-  console.log(her);
-  console.log(her.hasJob());
-  console.log(her.getGreeting());
+  let me2 = new Programmer('Chris', 33, 'Java');
+  console.log(me2.getGreeting());
 }

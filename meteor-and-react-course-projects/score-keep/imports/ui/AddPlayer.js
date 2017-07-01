@@ -5,7 +5,10 @@ import {Players} from './../api/players';
 
 export default class AddPlayer extends React.Component {
   addPlayer(playerName) {
-    Players.insert({name: playerName, score: 0});
+    Players.insert({
+      name: playerName, 
+      score: this.props.score
+    });
   }
 
   handleSubmit(e) {
@@ -33,4 +36,12 @@ export default class AddPlayer extends React.Component {
       </div>
     );
   }
+};
+
+AddPlayer.propTypes = {
+  score: PropTypes.number
+};
+
+AddPlayer.defaultProps = {
+  score: 0
 }

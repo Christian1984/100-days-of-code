@@ -1,6 +1,6 @@
 # 100 Days Of Code - Chris' Log
 
-### Day 0: June 30, 2017 (Example 1)
+### Day 1: June 30, 2017
 
 **Today's Progress**: 
 - 100 Days Of Code Kick-Off.
@@ -12,4 +12,18 @@
 I've commited to 100 days of code. 1 hour coding, every day for the next 100 days. Let's see how this will turn out. For now, I'll keep working on my frontend skills, going through a udemy meteor-and-react-course.
 
 **Link to work:** 
-[GitHub Repo](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)
+[GitHub Repo](https://github.com/Christian1984/100-days-of-code/)
+[Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)
+
+### Day 2: July 1, 2017
+
+**Today's Progress**: 
+- extracted Player and PlayerList into individual react component
+
+**Thoughts and Takeaways:** 
+- Learned about binding and how to control binding in callbacks with .bind(this)
+- Learned about how to pass key-attributes to react child components: don't add them inside the class of the component, but where you render them.
+- Huh! Make sure to always import named and unnamed exports correctly if you add or miss those {} on the import statement you'll probably get some really ugly-to-debug errors.
+
+**Link to work:** 
+[Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)

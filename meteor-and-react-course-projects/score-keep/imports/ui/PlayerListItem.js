@@ -6,10 +6,12 @@ import {Players} from './../api/players';
 export default class PlayerListItem extends React.Component {
     render() {
         return (
-            <p className='player'>
-                <span className='playerName'>{this.props.player.name}</span>
-                <span className='staticPlaceholder'> has a score of </span>
-                <span className='playerScore'>{this.props.player.score} </span>
+            <div className='item'>
+                <p>
+                    <span className='playerName'>{this.props.player.name}</span>
+                    <span className='staticPlaceholder'> has a score of </span>
+                    <span className='playerScore'>{this.props.player.score} </span>
+                </p>
                 <button name={this.props.player._id} onClick={
                     () => {
                         Players.update(
@@ -33,7 +35,7 @@ export default class PlayerListItem extends React.Component {
                         });
                     }
                 }>X</button>
-            </p>
+            </div>
         )
     }
 }

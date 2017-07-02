@@ -38,12 +38,22 @@ I've commited to 100 days of code. 1 hour coding, every day for the next 100 day
 
 **Today's Progress**: 
 - scss / sass package (fourseven:scss) added to project (-> meteor add fourseven:scss)
-- scss styling implemented
+- scss styling implemented:
+  - scss wrapper class added
+  - title bar styled
+  - list, list items and input box styled
 
 **Thoughts and Takeaways:** 
 - brainstormed a bit about 100DayOfCode-Log-App
 - css reset re-memorized. heard about this and probably used it a looong time ago! memory refreshed: reset your css, at least with a four-line-reset.
 - learned about rem (relative em) in css styling -> set font-size to 62.5% (=10px) for html-element, then use rem to scale fonts and other sizes relative to that.
+- classes need to be assigned to jsx elements using className-attribute (not class, since that
+s a reserved keyword)
+- use a wrapper-class and think about the order of div tags :-)
+- use @import-statements in scss to split up styling in multiple file (for better maintainability)
+- learned about scss partial imports (http://sass-lang.com/guide#topic-4):
+  - partial files start with an underscore (_)
+  - when importing a partial _<file>.scss, type @import './<folder>/<file>';
 
 **Link to work:** 
 [Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)

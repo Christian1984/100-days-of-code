@@ -19,6 +19,8 @@ I've commited to 100 days of code. 1 hour coding, every day for the next 100 day
 
 **Today's Progress**: 
 - extracted Player and PlayerList into individual react component
+- extracted the app itself to a react component
+- implemented conditional rendering
 
 **Thoughts and Takeaways:** 
 - Learned about binding and how to control binding in callbacks with .bind(this)

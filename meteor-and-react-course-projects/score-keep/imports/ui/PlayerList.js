@@ -2,12 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {Players} from './../api/players';
-import Player from './Player';
+import PlayerListItem from './PlayerListItem';
 
 export default class PlayerList extends React.Component {
     renderPlayers() {
+        if (this.props.players.length === 0) {
+            return <p>Add first player to get started!</p>
+        }
+
         return this.props.players.map((player) => 
-            { return <Player key={player._id} playerId={player._id} name={player.name} score={player.score} />});
+            { return <PlayerListItem key={player._id} player={player}/>});
     }
 
     render() {

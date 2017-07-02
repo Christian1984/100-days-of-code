@@ -7,9 +7,10 @@
 *.o
 *.so
 
-# OS generated files #
+# meteor stuff #
 ######################
-.meteor/
+# .meteor/
+.meteor/local
 node_modules/
 
 # Packages #

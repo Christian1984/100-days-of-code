@@ -6,35 +6,38 @@ import { Players } from './../api/players';
 export default class PlayerListItem extends React.Component {
   render() {
     return (
-      <div className='item player'>
-        <p>
-          <span className='player__name'>{this.props.player.name}</span>
-          <span className='player__stats'> has a score of </span>
-          <span className='player__action'>{this.props.player.score} </span>
-        </p>
-        <button className='button button--round' name={this.props.player._id} onClick={
-          () => {
-            Players.update(
-              { _id: this.props.player._id },
-              { $inc: { score: -1 } }
-            );
-          }
-        }>-1</button>
-        <button className='button button--round' name={this.props.player._id} onClick={
-          () => {
-            Players.update(
-              { _id: this.props.player._id },
-              { $inc: { score: 1 } }
-            );
-          }
-        }>+1</button>
-        <button className='button button--round' name={this.props.player._id} onClick={
-          () => {
-            Players.remove({
-              _id: this.props.player._id
-            });
-          }
-        }>X</button>
+      <div className='item'>
+        <div className='player'>
+          <div>
+            <h3 className='player__name'>{this.props.player.name}</h3>
+            <p className='player__stats'>has {this.props.player.score} point(s).</p>
+          </div>
+          <div className='player__actions'>
+            <button className='button button--round' name={this.props.player._id} onClick={
+              () => {
+                Players.update(
+                  { _id: this.props.player._id },
+                  { $inc: { score: -1 } }
+                );
+              }
+            }>-1</button>
+            <button className='button button--round' name={this.props.player._id} onClick={
+              () => {
+                Players.update(
+                  { _id: this.props.player._id },
+                  { $inc: { score: 1 } }
+                );
+              }
+            }>+1</button>
+            <button className='button button--round' name={this.props.player._id} onClick={
+              () => {
+                Players.remove({
+                  _id: this.props.player._id
+                });
+              }
+            }>X</button>
+          </div>
+        </div>
       </div>
     )
   }

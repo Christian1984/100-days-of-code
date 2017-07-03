@@ -10,7 +10,7 @@ export default class PlayerListItem extends React.Component {
         <div className='player'>
           <div>
             <h3 className='player__name'>{this.props.player.name}</h3>
-            <p className='player__stats'>has {this.props.player.score} point(s).</p>
+            <p className='player__stats'>is {this.props.player.position} with {this.props.player.score} point(s).</p>
           </div>
           <div className='player__actions'>
             <button className='button button--round' name={this.props.player._id} onClick={

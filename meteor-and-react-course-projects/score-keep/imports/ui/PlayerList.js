@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FlipMove from 'react-flip-move';
 
 import { Players } from './../api/players';
 import PlayerListItem from './PlayerListItem';
@@ -15,7 +16,12 @@ export default class PlayerList extends React.Component {
   }
 
   render() {
-    return <div>{this.renderPlayers()}</div>;
+    return (
+      <div>
+        <FlipMove>
+          {this.renderPlayers()}
+        </FlipMove>
+      </div>);
   }
 }
 

@@ -5,12 +5,14 @@ import { Players } from './../api/players';
 
 export default class PlayerListItem extends React.Component {
   render() {
+    let className = `item item--position-${this.props.player.rank}`;
+
     return (
-      <div className='item'>
+      <div className={className}>
         <div className='player'>
           <div>
             <h3 className='player__name'>{this.props.player.name}</h3>
-            <p className='player__stats'>is {this.props.player.position} with {this.props.player.score} point(s).</p>
+            <p className='player__stats'>is in {this.props.player.position} place with {this.props.player.score} point(s).</p>
           </div>
           <div className='player__actions'>
             <button className='button button--round' name={this.props.player._id} onClick={

@@ -2,7 +2,7 @@
 
 ### Day 1: June 30, 2017
 
-**Today's Progress**: 
+**Today's Progress:**
 - 100 Days Of Code Kick-Off.
 - Created my first react components
 - Used React props for the first time
@@ -19,7 +19,7 @@ I've commited to 100 days of code. 1 hour coding, every day for the next 100 day
 
 ### Day 2: July 1, 2017
 
-**Today's Progress**: 
+**Today's Progress:**
 - extracted Player and PlayerList into individual react component
 - extracted the app itself to a react component
 - implemented conditional rendering
@@ -36,7 +36,7 @@ I've commited to 100 days of code. 1 hour coding, every day for the next 100 day
 
 ### Day 3: July 2, 2017
 
-**Today's Progress**: 
+**Today's Progress:**
 - scss / sass package (fourseven:scss) added to project (-> meteor add fourseven:scss)
 - scss styling implemented:
   - scss wrapper class added
@@ -54,6 +54,81 @@ s a reserved keyword)
 - learned about scss partial imports (http://sass-lang.com/guide#topic-4):
   - partial files start with an underscore (_)
   - when importing a partial _<file>.scss, type @import './<folder>/<file>';
+
+**Link to work:** 
+[Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)
+
+
+
+### Day 4: July 3, 2017
+
+**Today's Progress:**
+- buttons styled with scss and BEM
+- BEM challenge taken: refactor title bar to match BEM pattern
+- input component styled using FlexBox
+- player block created and beatified using FlexBox
+- added mobile support
+- react-flip-move library installed via "meteor nmp install react-flip-move --save" (https://github.com/joshwcomeau/react-flip-move)
+- Flip Move Animation added to the list. Looks very nice!
+- Rank added (1st, 2nd, 3rd) etc. by using numeral library (http://numeraljs.com/)
+- first three places appear colored - nice :-)
+- SCORE KEEP PROJECT COMPLETED!
+
+**Thoughts and Takeaways:**
+- learned about BEM (Block, Element, Modifier) pattern (http://getbem.com/)
+- learned about FlexBox (https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- learned how to simply make the app responsively scale to mobile devices using
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+- learned about jsx child components by using 'normal' tags instead of self-closing tags and then calling {this.props.children}
+- learned how to use third party components/libraries with meteor. it was really easy (y)
+- learned about two no es6-features:
+  - learned about object spread operator (https://rainsoft.io/how-three-dots-changed-javascript/), order matters!
+  - learned about object property shorthand
+  - example:
+
+    ```javascript
+    let house = {
+      bedrooms: 2,
+      bathrooms: 1
+    };
+
+    let yearBuilt = 2014;
+
+    /**
+    * challenge: print to console
+    * {
+    *  ...house,
+    *  bedrooms:3,
+    *  yearBuilt,
+    *  flooring: 'Carpet'
+    * }
+    */
+
+    let out = {
+      ...house,
+      bedrooms:3,
+      yearBuilt,
+      flooring: 'Carpet'
+    };
+
+    console.log(out);
+    ```
+- learned about dynamic classes
+- learned how to darken colors with scss darken() -> (http://sass-lang.com/documentation/Sass/Script/Functions.html#darken-instance_method)
+
+**Questions:**
+- how to get a log on the server side when a new item is added to the db?
+
+**Link to work:** 
+[Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)
+
+
+
+### Day x: July x, 2017
+
+**Today's Progress:**
+
+**Thoughts and Takeaways:**
 
 **Link to work:** 
 [Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)

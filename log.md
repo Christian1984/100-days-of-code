@@ -133,10 +133,10 @@ s a reserved keyword)
 - 100-days-of-code-journal-app restructered. everything broken up into components, db functionality added etc.
 - played around a bit in the MongoDB shell
 
-**Thoughts and Takeaways:**
-
 **Link to work:**
+
 [100-days-of-code-journal-app] (https://github.com/Christian1984/100-days-of-code-journal)
+
 [short-lnk](https://github.com/Christian1984/short-lnk)
 
 

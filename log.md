@@ -8,10 +8,10 @@
 - Used React props for the first time
 - Asked instructor a question :-)
 
-**Thoughts:** 
+**Thoughts:**
 I've commited to 100 days of code. 1 hour coding, every day for the next 100 days. Let's see how this will turn out. For now, I'll keep working on my frontend skills, going through a udemy meteor-and-react-course.
 
-**Link to work:** 
+**Link to work:**
 [GitHub Repo](https://github.com/Christian1984/100-days-of-code/)
 [Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)
 
@@ -24,12 +24,12 @@ I've commited to 100 days of code. 1 hour coding, every day for the next 100 day
 - extracted the app itself to a react component
 - implemented conditional rendering
 
-**Thoughts and Takeaways:** 
+**Thoughts and Takeaways:**
 - Learned about binding and how to control binding in callbacks with .bind(this)
 - Learned about how to pass key-attributes to react child components: don't add them inside the class of the component, but where you render them.
 - Huh! Make sure to always import named and unnamed exports correctly if you add or miss those {} on the import statement you'll probably get some really ugly-to-debug errors.
 
-**Link to work:** 
+**Link to work:**
 [Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)
 
 
@@ -43,7 +43,7 @@ I've commited to 100 days of code. 1 hour coding, every day for the next 100 day
   - title bar styled
   - list, list items and input box styled
 
-**Thoughts and Takeaways:** 
+**Thoughts and Takeaways:**
 - brainstormed a bit about 100DayOfCode-Log-App
 - css reset re-memorized. heard about this and probably used it a looong time ago! memory refreshed: reset your css, at least with a four-line-reset.
 - learned about rem (relative em) in css styling -> set font-size to 62.5% (=10px) for html-element, then use rem to scale fonts and other sizes relative to that.
@@ -55,7 +55,7 @@ s a reserved keyword)
   - partial files start with an underscore (_)
   - when importing a partial _<file>.scss, type @import './<folder>/<file>';
 
-**Link to work:** 
+**Link to work:**
 [Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)
 
 
@@ -73,6 +73,7 @@ s a reserved keyword)
 - Rank added (1st, 2nd, 3rd) etc. by using numeral library (http://numeraljs.com/)
 - first three places appear colored - nice :-)
 - SCORE KEEP PROJECT COMPLETED!
+- created new project, basic structure and some core html for the 100-days-of-code-journaling app!
 
 **Thoughts and Takeaways:**
 - learned about BEM (Block, Element, Modifier) pattern (http://getbem.com/)
@@ -119,8 +120,24 @@ s a reserved keyword)
 **Questions:**
 - how to get a log on the server side when a new item is added to the db?
 
-**Link to work:** 
+**Link to work:**
 [Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)
+
+
+
+### Day 5: July 4, 2017
+
+**Today's Progress:**
+- done a few basic #freeCodeCamp-challenges in the morning to get started
+- created a new project for the short-lnk project of udemy's meteor and react course  and added some basic structure to it (customized the boiler plate project) and did some housekeeping (created respository etc.)
+- 100-days-of-code-journal-app restructered. everything broken up into components, db functionality added etc.
+- played around a bit in the MongoDB shell
+
+**Thoughts and Takeaways:**
+
+**Link to work:**
+[100-days-of-code-journal-app] (https://github.com/Christian1984/100-days-of-code-journal)
+[short-lnk](https://github.com/Christian1984/short-lnk)
 
 
 
@@ -130,5 +147,5 @@ s a reserved keyword)
 
 **Thoughts and Takeaways:**
 
-**Link to work:** 
-[Score Keep App](https://github.com/Christian1984/100-days-of-code/tree/master/meteor-and-react-course-projects/score-keep)
+**Link to work:**
+[]()

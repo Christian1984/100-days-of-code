@@ -135,7 +135,7 @@ s a reserved keyword)
 
 **Link to work:**
 
-[100-days-of-code-journal-app] (https://github.com/Christian1984/100-days-of-code-journal)
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
 
 [short-lnk](https://github.com/Christian1984/short-lnk)
 

@@ -132,6 +132,9 @@ s a reserved keyword)
 - created a new project for the short-lnk project of udemy's meteor and react course  and added some basic structure to it (customized the boiler plate project) and did some housekeeping (created respository etc.)
 - 100-days-of-code-journal-app restructered. everything broken up into components, db functionality added etc.
 - played around a bit in the MongoDB shell
+- added entry-create/-update form to journal-app
+- added insert functionality
+- added functionality to sum up duration data
 
 **Link to work:**
 

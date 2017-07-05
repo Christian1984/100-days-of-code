@@ -144,6 +144,16 @@ s a reserved keyword)
 
 
 
+### Day 5: July 4, 2017
+
+**Today's Progress:**
+- styled the 100-days-of-code-journal-app using scss
+
+**Link to work:**
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

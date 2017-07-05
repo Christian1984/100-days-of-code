@@ -148,9 +148,16 @@ s a reserved keyword)
 
 **Today's Progress:**
 - styled the 100-days-of-code-journal-app using scss
+- continued working on the short lnk app as part of the meteor/react course
+
+**Thoughts and Takeaways:**
+- learned about react routing (Routes, Router, browserHistory)
+- IMPORTANT: fallback-route (path='*') must be the LAST component in the Router!
 
 **Link to work:**
 [100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+[short-lnk](https://github.com/Christian1984/short-lnk)
 
 
 

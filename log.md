@@ -169,7 +169,8 @@ s a reserved keyword)
 - implemented navigation through the router using react-router's browserHistory.push('url')-method (for switching routes programmatically)
 - created a signup form for Short Lnk project
 - added a conditionally rendered error message by utilizing state. pretty cool stuff!
-- onChange-callback for password added, updateing 'passwordOkay' while typing and rendering an error message accordingly, using react component state
+- onChange-callback for password added, updating 'passwordOkay' while typing and rendering an error message accordingly, using react component state, also deactivating submit-button on the fly
+- basic user-system and signup implemented (data validation still missing)
 
 **Thoughts and Takeaways:**
 - routers are just a normal react component. they can also be nested, which will come in handy when there are static components (like a footer or so), e.g.

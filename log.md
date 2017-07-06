@@ -144,7 +144,7 @@ s a reserved keyword)
 
 
 
-### Day 5: July 4, 2017
+### Day 6: July 5, 2017
 
 **Today's Progress:**
 - styled the 100-days-of-code-journal-app using scss
@@ -157,6 +157,46 @@ s a reserved keyword)
 **Link to work:**
 [100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
 
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
+
+### Day 7: July 6, 2017
+
+**Today's Progress:**
+- continued working on the short lnk app as part of the meteor/react course
+- implemented navigation through the router via react-router's <Link to='url'>-component
+- implemented navigation through the router using react-router's browserHistory.push('url')-method (for switching routes programmatically)
+- created a signup form for Short Lnk project
+- added a conditionally rendered error message by utilizing state. pretty cool stuff!
+- onChange-callback for password added, updateing 'passwordOkay' while typing and rendering an error message accordingly, using react component state
+
+**Thoughts and Takeaways:**
+- routers are just a normal react component. they can also be nested, which will come in handy when there are static components (like a footer or so), e.g.
+
+```javascript
+let routes = (
+  <Router history={browserHistory}>
+    <Route path='/' component={Login} />
+    <Route path='/signup' component={Signup} />
+    <Route path='/link' component={Link} />
+    <Route path='*' component={NotFound} />
+  </Router>
+);
+
+Meteor.startup(() => {
+  ReactDOM.render(<div><p>TEST</p><div>{routes}</div></div>, document.getElementById('app'));
+});
+```
+
+- learned about react-router's Link component and browserHistory-object
+- learned about react component state. looks like this is something that would solve a problem with my 100-day-of-code-journal-app I was thinking about yesterday. man that udemy course delivers the information just when I need it :-) state is updated by user interaction.
+- learned about the difference between props and state:
+  - props get passed into a component from OUTSIDE. they CANNOT be modified by the component itself.
+  - the state is managed by the component ITSELF. state CANNOT be modified from outside.
+- learned how to update a component's state using this.setState({stateParamToUpdate: newValue}, [callback]). calling this.state.stateParamToUpdate = newValue DOES NOT work (no callback being invoked, thus no re-rendering)
+
+**Link to work:**
 [short-lnk](https://github.com/Christian1984/short-lnk)
 
 

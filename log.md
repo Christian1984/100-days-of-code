@@ -202,6 +202,26 @@ Meteor.startup(() => {
 
 
 
+### Day 8: July 7, 2017
+
+**Today's Progress:**
+- today was backseat-coding-day :-)
+- stopwatch functionality implemented using react component state
+- support for multiline logs added
+- link element made clickable
+- a-tag styled
+- added support for seperate project name and link which then shows as <a href={projectUrl}>{projectName}</a>
+- support for date-flooring and adding days added (utils)
+- progress bar added and styled (needs some finishing touches, but works and looks okay enough to start with)
+
+**Thoughts and Takeaways:**
+- practiced a lot today, and put the stuff I learned into practice... pretty good to see that the transfer works nicely :-)
+
+**Link to work:**
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

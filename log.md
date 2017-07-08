@@ -222,6 +222,18 @@ Meteor.startup(() => {
 
 
 
+### Day 9: July 8, 2017
+
+**Today's Progress:**
+- progress bars tuned
+
+**Thoughts and Takeaways:**
+
+**Link to work:**
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

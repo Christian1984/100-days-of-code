@@ -234,6 +234,19 @@ Meteor.startup(() => {
 
 
 
+### Day 10: July 9, 2017
+
+**Today's Progress:**
+- restyled some elements (form and progressbars)
+- added rendering for skipped days
+
+**Thoughts and Takeaways:**
+
+**Link to work:**
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

@@ -247,6 +247,24 @@ Meteor.startup(() => {
 
 
 
+### Day 11: July 10, 2017
+
+**Today's Progress:**
+- used moment.js to format dates properly
+- set moment.locale() based on user's browser settings
+- fallback implemented if locale detection fails
+- logs for days skipped beautified a bit (shows date + default message)
+- added icons to show log type on a glance
+
+**Thoughts and Takeaways:**
+- importing svgs into react wasn't that smooth. had to hardcode my svg into the react component. there must be a way to load it from file, but i didn't find it yet.
+- in order to use `moment.locale(<new-locale>)`, make sure to `import * as locales from 'moment/min/locales';`
+
+**Link to work:**
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

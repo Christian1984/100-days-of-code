@@ -265,6 +265,27 @@ Meteor.startup(() => {
 
 
 
+### Day 12: July 11, 2017
+
+**Today's Progress:**
+- when user clicks finished, date and duration are automatically pulled into the form
+- check if date of new entry is already in list and populate input fields accordingly
+- automatically change from log-creation to log-updating if log for a given date already exists
+- allow user to update those entries
+- problem with updating entries fixed
+- lookup by iteration replaced by mini mongo call
+
+**Open Issues:**
+- log entries in future not displayed yet (is that really a problem?)
+- time today needs to be immediatly set if there is already an entry for today
+
+**Thoughts and Takeaways:**
+
+**Link to work:**
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

@@ -274,6 +274,7 @@ Meteor.startup(() => {
 - allow user to update those entries
 - problem with updating entries fixed
 - lookup by iteration replaced by mini mongo call
+- added login-functionality to short lnk app
 
 **Open Issues:**
 - log entries in future not displayed yet (is that really a problem?)
@@ -282,7 +283,49 @@ Meteor.startup(() => {
 **Thoughts and Takeaways:**
 
 **Link to work:**
+
 [100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
+
+### Day 13: July 12, 2017
+
+**Today's Progress:**
+- 100-DoC-Journal:
+  - edit button functionality added
+  - add scroll to form
+- short lnk
+  - added login callback
+  - added logout functionality
+  - added user-navigation based on their login-status
+  - added onEnter-callbacks to the single routes to make sure that users will be redirected if their not supposed to this page (even if they use the backbutton (see below))
+  - implemented replace-based-redirects
+  - customized login error message
+  - added simpl-schema package for schema validation
+  - schema validation examples added
+  - server-side validation of new user's email added
+  - error-handling for failed validations added
+  - router-code and server-code refactored
+
+
+**Thoughts and Takeaways:**
+- learned about how to user tracker.autorun() to react to logout and login events
+- learned about how double falsification (!!var) turns any js-value into a real boolean
+- learned how to navigate users around based on their login status and their location
+- the tracker.autorun() approach is still vulnurable, because it only runs when someone logs in or out. hence, if someone manually uses the browser's back button, he can still access the requested route (even if it is only for authorized users)
+- learned how to use Meteor.userId() to check if a user is authenticated or not and then route him with tracker.autorun() (on login/logout events) and routes' onEnter-callbacks.
+- learned about the difference between a push-based-redirect and a replace-based-redirect (push-based can destroy the back button functionality)
+- learned about schema-validation with simpl-schema
+- learned about hooks on server side (e.g. Accounts.validateNewUser)
+- learned about js exception handling (try-catch)
+
+**Link to work:**
+
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+[short-lnk](https://github.com/Christian1984/short-lnk)
 
 
 

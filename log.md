@@ -320,11 +320,50 @@ Meteor.startup(() => {
 - learned about schema-validation with simpl-schema
 - learned about hooks on server side (e.g. Accounts.validateNewUser)
 - learned about js exception handling (try-catch)
+- learned about Robomongo / Robo 3T (https://robomongo.org) - great mongo db explorer/viewer
 
 **Link to work:**
 
 [100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
 
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
+
+### Day 14: July 13, 2017
+
+**Today's Progress:**
+- implemented the "unsafe" query system that we also used in the score keep app
+  - implemented the mongo-db-collection
+  - add link function added
+  - list rendering added by using Tracker.autorun() in combination with the life-cycle methods
+- started to adding security to the short lnk app
+  - removed package autopublish
+  - to get started, created a publication and subscription to restore the original, autopulish-like behaviour which we will customize soon!
+
+**Thoughts and Takeaways:**
+- learned some basic theory about how to lock down data in a mongo db so that it can only be requested by authorised users with subscriptions and publications
+- learned about react component life cycle methods componentDidMount() and componentWillUnmount()
+- when using a router, the Tracker.autorun() functionality for rerendering must be called inside the individual component, as we cannot rerender the entire app
+- forgetting a simple 'return' in a react component's render()-function is FREAKING(!) hard to debug!
+- learned how to use the return value of Tracker.autorun() to keep a reference to the Tracker in order to stop it later.
+  ```javascript
+  componentDidMount() {
+    this.linksTracker = Tracker.autorun(() => {
+      let links = LinksCollection.find({}).fetch();
+      this.setState({links});
+    });
+  }
+
+  componentWillUnmount() {
+    this.linksTracker.stop();
+  }
+  ```
+
+- learned how to test if the stop call to the Tracker worked: log out (i.e. make sure that the component did unload), delete all links from the mongo db console and check if errors are thrown in the console (Can only update a mounted or mounting component)
+- learned about the autopublish package, which comes bundled with meteor, and publishes ALL db collections to ALL clients. great for prototyping, but should be removed as soon as sensitive or user-specific data comes into play
+
+**Link to work:**
 [short-lnk](https://github.com/Christian1984/short-lnk)
 
 

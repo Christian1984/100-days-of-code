@@ -368,6 +368,37 @@ Meteor.startup(() => {
 
 
 
+### Day 15: July 14, 2017
+
+**Today's Progress:**
+- added userId of currently logged in user to links object (WARNING: THIS IS NOT A SECURE APPROACH)
+- updated the publication so that it will only return links to the user with the corresponding userId
+- created a very simple meteor method (greetUser) to illustrate how meteor methods work. it's amazing stuff!
+- added arguments to the greetUser-meteor-method
+- simulated throwing an exception inside the greetUser-meteor-method
+- added addNumbers meteor method for practice purposes
+- removed the 'insecure' package. from now on, db manipulation can only be done on the server side!
+- added a meteor method 'links.insert' to insert new links into the collection on the server side.
+- tested the auth-validation in the 'links.insert'-method by calling it from meteor.startup and being logged out. error shows in the console (y)!
+
+
+**Thoughts and Takeaways:**
+- thought about what "arrow-functions do not bind this"-means. will code a small example to better understand that soon (Codepen TODO!!!)
+- learned about meteor methods
+  - when calling a remote method on the server, it only runs there
+  - when calling a remote method from the client it will run on BOTH, the client itself AND the server, thus allowing for optimistic ui! 
+  - however, the callback will only be executed on the client.
+  - the callback is coming from THE SERVER! the client side NEVER fires the callback itself!
+- finally learned about the difference between == and === in javescript:
+  - == checks for ABSTRACT equality, e.g. 3 == '3' returns true!
+  - === checks for STRICT equality, e.g. 3 === '3' return false!!!
+  - === also checks for identity!
+
+**Link to work:**
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

@@ -399,6 +399,35 @@ Meteor.startup(() => {
 
 
 
+### Day 16: July 15, 2017
+
+**Today's Progress:**
+- added schema validation for the url of the link object
+- improved form behaviour based on successful insert / errors
+- customized the error-message using the label-parameter of SimpleSchema
+- updated the code to prevent re-throwing a meteor-error when a validation fails
+- added a intercept handler for http requests
+- temp: printed some infos about the request to the console
+- temp: modified the result with some test data
+- temp: added a static redirect to google
+- implement the dynamic redirect
+- added shortid-package to the project
+
+**Thoughts and Takeaways:**
+- learned how to use the label-property in a SimpleSchema-Object to customize the e.message that is thrown in case the validation failed
+- learned how to avoid re-throwing a meteor-error when a validation fails using SimpleSchema.defineValidationErrorTransform()
+- learned about node http and node connect
+  - learned about how to intercept a request using the middleware `WebApp.connectHandlers.use((req, res, next) => { //do stuff; next()})`;
+  - learned how to modify the server's response (status code, headers, body)
+  - learned how to redirect on the middleware intercept
+- httpstatuses.com lists all the http status codes!
+- while mongo db's find() returns a cursor, findOne() returns the document directly. No fetch() needed here!
+
+**Link to work:**
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

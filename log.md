@@ -428,6 +428,31 @@ Meteor.startup(() => {
 
 
 
+### Day 17: July 16, 2017
+
+**Today's Progress:**
+- added react-router package to 100-DoC-Journal app
+- prepared the entire app to support multiple pages using router
+- added tracker activation and stopping on component level
+- other housekeeping, refactoring, renaming etc. done
+- bug in may router fixed (due to upgrading to v4, which works a bit different than v3 which we used in the short lnk-app)
+- added some temporary pages for login, signup and not found
+
+**Open Issues:**
+- browserHistory is no longer part of react-router (since v4). this is the new approach:
+  - `import { createBrowserHistory } from 'history';` 
+  - `let history = createBrowserHistory()`
+  - pass history into router via `<Router history={createBrowserHistory()}>...</Router>`
+- learned about how routers work in react-router v4. all routes must be nested in a `<Switch>...</Switch>`-Block and the '/' route must be qualified with exact (see here for details on exact: https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf)
+
+**Thoughts and Takeaways:**
+
+**Link to work:**
+
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

@@ -438,14 +438,37 @@ Meteor.startup(() => {
 - bug in may router fixed (due to upgrading to v4, which works a bit different than v3 which we used in the short lnk-app)
 - added some temporary pages for login, signup and not found
 
-**Open Issues:**
+**Thoughts and Takeaways:**
 - browserHistory is no longer part of react-router (since v4). this is the new approach:
   - `import { createBrowserHistory } from 'history';` 
   - `let history = createBrowserHistory()`
   - pass history into router via `<Router history={createBrowserHistory()}>...</Router>`
 - learned about how routers work in react-router v4. all routes must be nested in a `<Switch>...</Switch>`-Block and the '/' route must be qualified with exact (see here for details on exact: https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf)
 
+**Link to work:**
+
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
+### Day 18: July 17, 2017
+
+**Today's Progress:**
+- added accounts-password package
+- added simpl-schema package
+- forms to login and signup form added
+- logout button to TitleBar added
+- added login/logout functionality
+- added routing based on login-status
+- added redirect on login/logout status change
+- refactored login and signup page (form in seperate component)
+- styled login and signup page
+
 **Thoughts and Takeaways:**
+- learned that onEnter is no longer a valid prop of a react-router's route. since v4 use 
+  ```javascript
+  <Route path='/path' render={() => { isAuthorized ? <MyTargetComponent /> : <Redirect to='/' /> }} />
+  ```
 
 **Link to work:**
 

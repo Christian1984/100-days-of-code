@@ -476,6 +476,36 @@ Meteor.startup(() => {
 
 
 
+### Day 19: July 18, 2017
+
+**Today's Progress:**
+- started building the js drumkit from JavaScript 30, https://courses.wesbos.com/
+- styled the drumkid with css
+- refactored the drumkit
+
+**Thoughts and Takeaways:**
+- got into some basic, vanilla javascript
+- learned about attribute selectors (e.g. `let audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);`)
+- learned about transitionend event handlers and how every single transition in a css `transition: all`-property fire individually
+- to vertically center items inside a flex container, set that flexcontainers css like:
+```css
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center; //aligns vertically
+  justify-content: center; //aligns horizontally
+}
+```
+
+**Link to work:**
+
+[Javascript Drumkit](http://apps.chris-hoffmann.ch/javascript30/jsdrumkit/)
+
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

@@ -511,6 +511,10 @@ Meteor.startup(() => {
 - digital stopwatch implemented
 - digital watch implemented
 - basic styling done
+- functionality and styling for analog clock added
+- refactored code
+- removed stopwatch
+- added background
 
 **Thoughts and Takeaways:**
 - worked with a combination of absolute positioning and flexbox. not sure if that's rock solid, but it seems to work

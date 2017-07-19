@@ -515,12 +515,14 @@ Meteor.startup(() => {
 - refactored code
 - removed stopwatch
 - added background
+- used absolute positioning instead. obviously, the privious approach didn't work
 
 **Thoughts and Takeaways:**
 - worked with a combination of absolute positioning and flexbox. not sure if that's rock solid, but it seems to work
 - learned about how to apply a transform operation to an element through js
 - learned how to use `transform-origin` in css
 - learned about http://unsplash.it - pretty cool for getting quick results
+- recap regarding absolute & relative positioning (https://www.youtube.com/watch?v=aFtByxWjfLY) -> if you want the child, which is positioned absolute to honor the position of its parent, that parent needs position relative!
 
 **Link to work:**
 

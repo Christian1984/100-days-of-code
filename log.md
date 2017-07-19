@@ -502,7 +502,25 @@ Meteor.startup(() => {
 
 [Javascript Drumkit](http://apps.chris-hoffmann.ch/javascript30/jsdrumkit/)
 
-[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+### Day 20: July 19, 2017
+
+**Today's Progress:**
+- boilerplate (html and css) for css and js watch project created
+- digital stopwatch implemented
+- digital watch implemented
+- basic styling done
+
+**Thoughts and Takeaways:**
+- worked with a combination of absolute positioning and flexbox. not sure if that's rock solid, but it seems to work
+- learned about how to apply a transform operation to an element through js
+- learned how to use `transform-origin` in css
+- learned about http://unsplash.it - pretty cool for getting quick results
+
+**Link to work:**
+
+[CSS Clock](http://apps.chris-hoffmann.ch/javascript30/css-clock/)
 
 
 

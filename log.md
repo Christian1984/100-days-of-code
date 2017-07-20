@@ -534,9 +534,10 @@ Meteor.startup(() => {
 
 **Today's Progress:**
 - started building a breakout clone with what I've learned from the css clock project
+- added blocks, collision detection, scores etc. it's a game!
 
 **Thoughts and Takeaways:**
-- 
+- i made an entire game in one day! pretty cool :-)
 
 **Link to work:**
 

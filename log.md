@@ -515,7 +515,7 @@ Meteor.startup(() => {
 - refactored code
 - removed stopwatch
 - added background
-- used absolute positioning instead. obviously, the privious approach didn't work
+- used absolute positioning inside relative positioned parent instead. obviously, the previous approach didn't work
 
 **Thoughts and Takeaways:**
 - worked with a combination of absolute positioning and flexbox. not sure if that's rock solid, but it seems to work
@@ -527,6 +527,20 @@ Meteor.startup(() => {
 **Link to work:**
 
 [CSS Clock](http://apps.chris-hoffmann.ch/javascript30/css-clock/)
+
+
+
+### Day 21: July 20, 2017
+
+**Today's Progress:**
+- started building a breakout clone with what I've learned from the css clock project
+
+**Thoughts and Takeaways:**
+- 
+
+**Link to work:**
+
+[Javascript 30 Repository](http://apps.chris-hoffmann.ch/javascript30/)
 
 
 

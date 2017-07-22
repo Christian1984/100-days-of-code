@@ -545,6 +545,21 @@ Meteor.startup(() => {
 
 
 
+### Day 22: July 21, 2017
+
+**Today's Progress:**
+- watched a few bootstrap tutorials
+
+
+
+### Day 23: July 22, 2017
+
+**Today's Progress:**
+- applied updates to my shopify store
+- started building a very simple shopify plugin
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

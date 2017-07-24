@@ -560,6 +560,14 @@ Meteor.startup(() => {
 
 
 
+### Day 24: July 23, 2017
+
+**Today's Progress:**
+- worked on the shopify app
+- learned a few basics about liquid
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

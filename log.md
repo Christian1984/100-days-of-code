@@ -568,6 +568,13 @@ Meteor.startup(() => {
 
 
 
+### Day 25: July 24, 2017
+
+**Today's Progress:**
+- worked on and deployed the shopify app
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

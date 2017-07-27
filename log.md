@@ -575,6 +575,50 @@ Meteor.startup(() => {
 
 
 
+### Day 26: July 25, 2017
+
+**Today's Progress:**
+- worked on further customization of my shopify store. created a rumbling add to cart button and added a free shipping label
+
+
+
+### Day 27: July 26, 2017
+
+**Today's Progress:**
+- worked on some backend stuff on 100DoC Journal
+  - list empty notification updated and styled
+  - added schema validation to account creation
+  - autopublish package removed and serverside publication implemented
+  - added back the old functionality without autopublish. up next: return only user-specific data
+  - data is now queried on a per user-basis, i.e. queries now include user ids.
+  
+
+**Thoughts and Takeaways:**
+- 
+
+**Link to work:**
+
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
+### Day 28: July 27, 2017
+
+**Today's Progress:**
+- worked on some backend stuff on 100DoC Journal
+- implemented server side validation when writing to db via Meteor.methods
+  
+
+**Thoughts and Takeaways:**
+- learned about React's **Stateless Functional Components**
+- Learned about the concept of "Presentational Components" vs. "Container Components"
+
+**Link to work:**
+
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

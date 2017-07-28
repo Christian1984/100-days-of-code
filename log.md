@@ -607,11 +607,29 @@ Meteor.startup(() => {
 **Today's Progress:**
 - worked on some backend stuff on 100DoC Journal
 - implemented server side validation when writing to db via Meteor.methods
+- added username to user signup
   
 
 **Thoughts and Takeaways:**
 - learned about React's **Stateless Functional Components**
 - Learned about the concept of "Presentational Components" vs. "Container Components"
+
+**Link to work:**
+
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
+### Day 29: July 28, 2017
+
+**Today's Progress:**
+- added a home button
+- added a log-view component that allows read access to ANYONE's log!
+- added an http-request-interceptor to allow read-access to other people's log by typing <url>/<username>
+
+
+**Thoughts and Takeaways:**
+- 
 
 **Link to work:**
 

@@ -627,9 +627,36 @@ Meteor.startup(() => {
 - added a log-view component that allows read access to ANYONE's log!
 - added an http-request-interceptor to allow read-access to other people's log by typing <url>/<username>
 
+**Link to work:**
 
-**Thoughts and Takeaways:**
-- 
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
+### July 29, 2017
+**skipped :-/** 
+
+
+
+### Day 30: July 30, 2017
+
+**Today's Progress:**
+- added call to actions to share journals on the journal page and another to signup for a new account on the journalViewer
+- added some config stuff in order to deploy my app to heroku
+- deployed the 100-DoC-Journal-App to Heroku! HOW AWESOME!!!
+
+**Link to work:**
+
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
+### Day 31: July 31, 2017
+
+**Today's Progress:**
+- fixed a bug in 100-DoC-Journal app:
+- date textbox has a placeholder now showing in browsers that do not support datepickers
+- date entered will be regEx-validated on the backend
 
 **Link to work:**
 

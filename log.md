@@ -664,6 +664,18 @@ Meteor.startup(() => {
 
 
 
+### Day 32: August 01, 2017
+
+**Today's Progress:**
+- fixed schema-validation regEx-bug in 100DoC-App
+- timer gets automatically updated if there is already a log entry for the current day
+
+**Link to work:**
+
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

@@ -676,6 +676,20 @@ Meteor.startup(() => {
 
 
 
+### Day 33: August 02, 2017
+
+**Today's Progress:**
+- added a new stats bar to the 100-DoC-App (longest streak, average coding time etc.)
+- refactored some stuff
+- added code to avoid logs submitted for future dates (today + 1)
+- stats bar added to JournalViewer as well
+
+**Link to work:**
+
+[100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
 ### Day x: July x, 2017
 
 **Today's Progress:**

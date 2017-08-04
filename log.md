@@ -591,10 +591,6 @@ Meteor.startup(() => {
   - autopublish package removed and serverside publication implemented
   - added back the old functionality without autopublish. up next: return only user-specific data
   - data is now queried on a per user-basis, i.e. queries now include user ids.
-  
-
-**Thoughts and Takeaways:**
-- 
 
 **Link to work:**
 
@@ -683,10 +679,66 @@ Meteor.startup(() => {
 - refactored some stuff
 - added code to avoid logs submitted for future dates (today + 1)
 - stats bar added to JournalViewer as well
+- added flex-grow to timer, text centered
 
 **Link to work:**
 
 [100-days-of-code-journal-app](https://github.com/Christian1984/100-days-of-code-journal)
+
+
+
+### Day 34: August 03, 2017
+
+**Today's Progress:**
+- got my feet wet with cppcms on my local machine
+- compiled and installed the make recipe on my linux vm
+- followed along the hello world tutorial and fixed several issues along the way
+
+
+
+### Day 35: August 04, 2017
+
+**Today's Progress:**
+- extracted two parts of the link-page into their own components to follow the single responsibility principle
+- turned several components that do not manage any state into "stateless functional components"
+- removed unneccessary imports
+- did some minor refactoring (LinkItem renamed to LinksListItem) for consistency purposes
+- added npm-package clipboard
+- added copy-to-clipboard feature to LinksListItem
+- destroy clipboard in componentWillUnmount-LC-method
+- added ui-feedback on clipboard-copy-success
+
+**Thoughts and Takeaways:**
+- access props in stateless functional components like this:
+```javascript
+  import React from 'react';
+  import PropTypes from 'prop-types';
+
+  import { Accounts } from 'meteor/accounts-base';
+
+  export default PrivateHeader = (props) => {
+    return (
+        <div>
+          <h1>{props.title}</h1>
+          <button onClick={() => Accounts.logout()}>Logout</button>
+        </div>
+      );
+  };
+
+  PrivateHeader.propTypes = {
+    title: PropTypes.string.isRequired
+  }
+```
+
+- learned about Meteor-Method `Meteor.absoluteUrl('abcd')`to get the absolute url and attach /abcd
+- learned how to use `document.execCommand('copy')`in order to copy stuff to the clipboard
+- learned how to use an input field, run the `select()` command on it and then copy it to the clipboard
+
+**Link to work:**
+
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
 
 
 

@@ -740,6 +740,36 @@ Meteor.startup(() => {
 
 
 
+### Day 36: August 05, 2017
+
+**Today's Progress:**
+- updated the old links in the db to feature the new visible property, so that links can be hidden
+- worked on the hide-links feature
+- meteor session package added
+- checkbox added to LinksList component
+- checkbox extracted to own component
+- url-input turned into a controlled input
+- checkbox turned into a controlled input
+
+-
+
+**Thoughts and Takeaways:**
+- learned how to use `db.links.updateMany({}, { $set: { visible: true } })` to update all entries in a given collection
+- I tried to get the hide feature up and running with a simple component state. this does not work though, because filtering happens in the db-call inside the Tracker.autorun(), which DOES NOT rerun if the state changes. Hence, the session package must be used, which is reactive!
+- learned how to use session-variable with `Session.set(key, value)`and `Session.get(key)`. If the getter is called inside a `Trackker.autorun()` this method will rerun everytime the Session-value changes.
+- using session variables also allows for an easy way to spread out functionality accross multiple components, without wiring everything up with external event listeners!
+- initially, the checkbox is an "uncontrolled input", we can make it a controlled input by
+  - add a state to the component
+  - set the value of the input to the state
+  - provide an onChange-Handler
+  - validate, update state in the onChange-Handler
+
+**Link to work:**
+
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
+
 
 
 ### Day x: July x, 2017

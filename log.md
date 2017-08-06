@@ -751,8 +751,6 @@ Meteor.startup(() => {
 - url-input turned into a controlled input
 - checkbox turned into a controlled input
 
--
-
 **Thoughts and Takeaways:**
 - learned how to use `db.links.updateMany({}, { $set: { visible: true } })` to update all entries in a given collection
 - I tried to get the hide feature up and running with a simple component state. this does not work though, because filtering happens in the db-call inside the Tracker.autorun(), which DOES NOT rerun if the state changes. Hence, the session package must be used, which is reactive!
@@ -763,6 +761,34 @@ Meteor.startup(() => {
   - set the value of the input to the state
   - provide an onChange-Handler
   - validate, update state in the onChange-Handler
+
+**Link to work:**
+
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
+
+### Day 37: August 06, 2017
+
+**Today's Progress:**
+- updated the old links in the db: added visitedCount and lastTimeVisited for analytics
+- added analytics to each short-link: visitedCount gets incremented by 1 and lastVisited at gets set to the current timestamp
+- dump the new information to the screen when rendering LinksListItems
+- added moment.js to the project
+- used moment.js and its `fromNow()` method to show some nice stats like 'visited x minutes ago'
+- added conditional rendering to the stats subrender
+- added the react-modal npm package
+- moved the link-add form into a react modal
+- added a button to open the modal using the form component's state
+- programatically switched focus to the link input field in the modal's `onAfterOpen`-prop
+- user can now close the modal when clicking outside of it
+- added an anchor tag to follow the short-link
+
+**Thoughts and Takeaways:**
+- learned about moment.js's `fromNow()` method
+- learned about react modals
+- learned how to programatically switch focus to a ref with e.g. `this.refs.url.focus()`
+- learned how to close the modal when clicking outside of it with adding functionality to the modal's`onRequestClose`-prop
 
 **Link to work:**
 

@@ -796,6 +796,23 @@ Meteor.startup(() => {
 
 
 
+### Day 38: August 07, 2017
+
+**Today's Progress:**
+- added fourseven:scss package
+- switched from css to scss file extensions
+- added partials, folder architecture and import hierarchy (boiler plate)
+- styled login and signup forms (except button, leave that for tomorrow)
+
+**Thoughts and Takeaways:**
+- learned how to select a subset of html-elements in (s)css like so: `input[type=text], input[type=email], input[type=password] {}`
+
+**Link to work:**
+
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
+
 
 
 ### Day x: July x, 2017

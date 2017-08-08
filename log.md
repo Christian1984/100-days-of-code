@@ -813,6 +813,27 @@ Meteor.startup(() => {
 
 
 
+### Day 39: August 08, 2017
+
+**Today's Progress:**
+- styled the buttons
+- styled the <a>-tags to look like buttons
+- styles the pill-buttons
+- styled the modal dialog
+
+**Thoughts and Takeaways:**
+- learned that <a>-tags are INLINE-tags by default. use `display: block;` to turn them into block elements, so that margins from other elements have an impact on them
+- learned how to add classes to the react-modal-dialog by setting the `<Modal>` component's classes with the properties `className` and `overlayClassName`
+- learned how to use `display: fixed` and `top: 0`, `bottom: 0`, `left: 0` and `right: 0` to make sure the modal dialog covers the entire viewport
+- learned to use the `type='button'` property for a `<button>`-element inside a form in order to prevent that buttom from submitting the form (which is the default behaviour)
+- learned about scss-function `fade-out` to add transparency to a given color
+
+**Link to work:**
+
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
+
 
 
 ### Day x: July x, 2017

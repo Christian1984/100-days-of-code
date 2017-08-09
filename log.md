@@ -820,6 +820,7 @@ Meteor.startup(() => {
 - styled the <a>-tags to look like buttons
 - styles the pill-buttons
 - styled the modal dialog
+- freestyle-styled the title-bar... will check against the solution tomorrow
 
 **Thoughts and Takeaways:**
 - learned that <a>-tags are INLINE-tags by default. use `display: block;` to turn them into block elements, so that margins from other elements have an impact on them
@@ -827,6 +828,25 @@ Meteor.startup(() => {
 - learned how to use `display: fixed` and `top: 0`, `bottom: 0`, `left: 0` and `right: 0` to make sure the modal dialog covers the entire viewport
 - learned to use the `type='button'` property for a `<button>`-element inside a form in order to prevent that buttom from submitting the form (which is the default behaviour)
 - learned about scss-function `fade-out` to add transparency to a given color
+
+**Link to work:**
+
+[short-lnk](https://github.com/Christian1984/short-lnk)
+
+
+
+### Day 40: August 09, 2017
+
+**Today's Progress:**
+- styled the title-bar a bit more
+- styled the checkbox
+- ran into a problem and asked a question in the forums: https://www.udemy.com/meteor-react/learn/v4/questions/2673066
+- styled the link list items and the status message if list is empty
+- added the react-flip-move library
+- added the `<meta name='viewport' content='width=device-width, initial-scale=1' />` meta tag to main.html to make the app look good on mobile devices
+
+**Thoughts and Takeaways:**
+- `<label>`-elements from checkboxes need that exact same `display: block;` property set for margins to take effect
 
 **Link to work:**
 

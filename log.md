@@ -854,6 +854,18 @@ Meteor.startup(() => {
 
 
 
+### Day 41: August 22, 2017
+
+**Today's Progress:**
+- started flexbox zombies. great course
+- built a rotating cube with html and css
+
+**Thoughts and Takeaways:**
+- learned a bit more about `display: flex`, `flex-direction`, `justify-content` and `align-items`
+- learned a lot about git stash, use it all the time now :-D
+
+
+
 
 
 ### Day x: July x, 2017

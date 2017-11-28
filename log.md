@@ -866,6 +866,78 @@ Meteor.startup(() => {
 
 
 
+### Days 42-47: November 13-27, 2017
+
+**Progress:**
+- built a first draft of "Project Stats", a project cars stats webapp, that uses CREST to fetch data from Project Cars 1 and 2.
+
+**Thoughts and Takeaways:**
+- learned tons about chart.js
+- got started with bootstraü
+
+**Link to work:**
+
+[pstats](https://github.com/Christian1984/pcars-web-viewer)
+
+
+
+### Days 48: November 28, 2017
+
+**Progress:**
+- returned to Javascript 30, Project 3 on the train to munich today
+- worked on Project 4 (Array Cardio Day 1)
+
+**Thoughts and Takeaways:**
+
+***Part 1 - CSS Variables***
+- learned about how css variables work. pretty cool :-)
+- learned how css variables are defined with --variable
+- learned that :root can be used as a css selector, which refers to the html element in html documents
+- learned how to use css vars by calling var(--varname) on them, e.g.
+```css
+:root {
+  --spacing: 10px;
+}
+
+img {
+  padding: var(--spacing); 
+}
+```
+
+- learned about css' `filter: blur(10px);` - That's pretty nice, and works on text well :-)
+- got a short refresher on how data-... attributes can be accessed through javascript (, e.g. access element's data-hello attribute through element.dataset.hello)
+- learned how css variables can be modified from javascript with `document.documentElement.style.setProperty('--varName', newValue);`
+- learned how to read a css variable from javascript by using `let cssBaseColor = getComputedStyle(document.body).getPropertyValue('--base');`
+
+
+***Part 2 - Array Cardio***
+- learned about how arrays' filter method works
+- also, learned about console.table() which could come in really handy!!! e.g.
+```javascript
+let fifteen = inventors.filter((inventor) => {
+if(inventor.year >= 1500 && inventor.year < 1600) {
+  return true; //means keep it!
+}
+});
+
+console.table(fifteen);
+```
+
+- learned about how sort works: it always compares two elements, returns either 1 or -1 based on whether an item should bubble up or down. pretty simple, once someone explains it :-)
+- learned how reduce works and what it does, e.g.
+```javascript
+let totalYears = inventors.reduce((total, inventor) => 
+  total + (inventor.passed - inventor.year), 0); 
+// that zero at the end is important, as it initialized the "total" var
+    
+```
+
+**Link to work:**
+
+[Javascript 30 Repository](http://apps.chris-hoffmann.ch/javascript30/)
+
+
+
 
 
 ### Day x: July x, 2017

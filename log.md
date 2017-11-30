@@ -938,6 +938,47 @@ let totalYears = inventors.reduce((total, inventor) =>
 
 
 
+### Days 49: November 29, 2017
+
+**Progress:**
+- worked on Javascript 30 Project 5 (Flex Panel Gallery)
+
+**Thoughts and Takeaways:**
+- kind of a refresher on how to add and remove classes to html elements with pure ES6
+- how append eventlisteners, especially for transitions etc
+- cool project!
+
+**Link to work:**
+
+[Javascript 30 Repository](http://apps.chris-hoffmann.ch/javascript30/)
+
+
+
+### Days 50: November 30, 2017
+
+**Progress:**
+- worked on Javascript 30 Project 6 (Type Ahead)
+
+**Thoughts and Takeaways:**
+- learned about a pretty big misunderstanding regarding const and let in ES6. Thought they're the same. Turns out, they're not!!! (https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75)
+- learned about `fetch`, which is a new browser keyword that fires an ajax query against a given endpoint. it returns a promise! use `.then(callback)` to access the results! e.g.
+```javascript
+fetch(endpoint)
+  .then(prom => prom.json())
+  .then(data => {
+    cities.push(...data);
+    console.log(cities);
+  });
+```
+
+
+
+**Link to work:**
+
+[Javascript 30 Repository](http://apps.chris-hoffmann.ch/javascript30/)
+
+
+
 
 
 ### Day x: July x, 2017

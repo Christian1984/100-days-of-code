@@ -971,11 +971,49 @@ fetch(endpoint)
   });
 ```
 
+**Link to work:**
+
+[Javascript 30 Repository](http://apps.chris-hoffmann.ch/javascript30/)
+
+
+
+### Days 51: December 16, 2017
+
+**Progress:**
+- started to get into unity by taking the Roll A Ball tutorial (https://unity3d.com/de/learn/tutorials/s/roll-ball-tutorial)
+
+**Thoughts and Takeaways:**
+- learned the difference between Update(), FixedUpdate() (for physics) and LateUpdate() (for operations that need to be made after the entire scene has been modified, e.g. control camera)
+- reminder: if you want to make your game framerate independent, multiplay modifications with Time.deltaTime, e.g. `transform.Rotate (new Vector3 (15, 30, 35) * Time.deltaTime);` means: rotate my Transform every second by the given Vector, NOT every frame!
 
 
 **Link to work:**
 
-[Javascript 30 Repository](http://apps.chris-hoffmann.ch/javascript30/)
+[Roll A Ball](https://github.com/Christian1984/UnityRollABall)
+
+
+
+### Days 52: December 17, 2017
+
+**Progress:**
+- kept working on the Roll A Ball tutorial (https://unity3d.com/de/learn/tutorials/s/roll-ball-tutorial)
+- finished and built for macos. pretty slick!
+
+**Thoughts and Takeaways:**
+- learned how to use tags to identify certain objects (the pickups in this example): add a tag to a gameobject or prefab in the editor, and then use `if (other.gameObject.CompareTag("pickup")) {...}` to compare the tag in conditional statements.
+- learned that unity treats static and dynamic colliders differently: in order to stay performant, you want to make sure that moving objects are considered as "dynamic", so that unity does not have to update the static collider cache every frame. this can be achieved by adding a Rigidbody component to the gameobject and then checking "Is Kinematic" in the editor. That way, the gameobject is considered dynamic, while it does not react to physical impact (like gravity, forces).
+
+THIS IS VERY IMPORTANT:
+
+  - RIGIDBODIES are moved using PHYSICS
+  - KINEMATIC RIGIDBODIES are moved using their TRANSFORM
+
+- learned that any scripts using UI elements must include UnityEngine.UI
+ 
+
+**Link to work:**
+
+[Roll A Ball](https://github.com/Christian1984/UnityRollABall)
 
 
 

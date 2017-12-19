@@ -1017,6 +1017,34 @@ THIS IS VERY IMPORTANT:
 
 
 
+### Days 53: December 18, 2017
+
+**Progress:**
+- changed the game so that the input does not add a force to the player-object, but so that the entire pane tilts and the ball is accelerated by gravity
+- added a mouse controller to roll-a-ball
+
+**Thoughts and Takeaways:**
+- the intended behaviour was achieved by making sure that the entire gameboard does rotate around the world axis for one rotation, and then around the local axis in the other direction
+ 
+
+**Link to work:**
+
+[Roll A Ball](https://github.com/Christian1984/UnityRollABall)
+
+
+
+### Days 54: December 19, 2017
+
+**Progress:**
+- added a rotating camera rather than the former lateral moving camera
+- added a scene to familiarize myself with how the oculus sdk/utilities and unity work together. SLICK! 
+
+**Link to work:**
+
+[Roll A Ball](https://github.com/Christian1984/UnityRollABall)
+
+
+
 
 
 ### Day x: July x, 2017
